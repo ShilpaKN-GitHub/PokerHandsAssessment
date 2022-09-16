@@ -7,7 +7,7 @@ Assessment exercise provided by Symbio.
    > Command: ```java --version```
 
 ## Steps to compile and run this project from Command Prompt or Terminal
-1. Download or clone this project to your local system directory.
+1. Download this project to your local system directory.
 2. Open terminal or command prompt.
 3. Change directory to PokerHands/src directory.
    > Example command:  
