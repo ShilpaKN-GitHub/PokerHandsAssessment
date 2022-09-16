@@ -13,7 +13,6 @@ public class PokerHands {
 
 		try (BufferedReader br = new BufferedReader(new FileReader(f))) {
 			String twoHands;
-			int i = 1;
 
 			while ((twoHands = br.readLine()) != null) {
 				String player1_HandData = twoHands.substring(0, twoHands.length() / 2);
@@ -28,8 +27,7 @@ public class PokerHands {
 				} else if (result.equals("Player2")) {
 					player2_WinCount++;
 				} else {
-					System.out.println(i + ". " + result);
-					i++;
+					System.out.println(result);
 				}
 			}
 

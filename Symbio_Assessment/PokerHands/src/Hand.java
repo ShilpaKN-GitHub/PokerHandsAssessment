@@ -103,17 +103,18 @@ class Hand {
 		int card3 = hand[2].getSuit();
 		int card4 = hand[3].getSuit();
 		int card5 = hand[4].getSuit();
-		
-		int Ten = (int)'T';
-		int Jack = (int)'J';
-		int Queen = (int)'Q';
-		int King = (int)'K';
-		int Ace = (int)'A';
-		
-		int[] cards = {card1, card2, card3, card4, card5};
+
+		int Ten = (int) 'T';
+		int Jack = (int) 'J';
+		int Queen = (int) 'Q';
+		int King = (int) 'K';
+		int Ace = (int) 'A';
+
+		int[] cards = { card1, card2, card3, card4, card5 };
 		Arrays.sort(cards);
 
-		boolean isRoyal = cards[0] == Ace && cards[1] == Jack && cards[2] == King && cards[3] == Queen && cards[4] == Ten;
+		boolean isRoyal = cards[0] == Ace && cards[1] == Jack && cards[2] == King && cards[3] == Queen
+				&& cards[4] == Ten;
 
 		return isRoyal && isFlush(hand);
 	}
@@ -349,12 +350,12 @@ class Hand {
 				cmp = compareRecursiveHighCard(hand1, hand2);
 				break;
 			case ROYAL_FLUSH:
-				cmp = compareHighCard(hand1, hand2);
+				cmp = compareRecursiveHighCard(hand1, hand2);
 				break;
 			}
-			return cmp == 1 ? hand1.getName() : cmp == -1 ? hand2.getName() : cmp == 2 ? "Unkown." : "Tie.";
+			return cmp == 1 ? hand1.getName() : cmp == -1 ? hand2.getName() : cmp == 0 ? "Tie." : "Unkown.";
 		} else {
-			return "Unkown";
+			return "Unkown.";
 		}
 	}
 }

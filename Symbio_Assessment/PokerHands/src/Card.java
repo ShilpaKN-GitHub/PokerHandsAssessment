@@ -1,5 +1,4 @@
 class Card implements Comparable<Card> {
-
 	private int rank;
 	private int value;
 	private char suit;
@@ -27,7 +26,7 @@ class Card implements Comparable<Card> {
 	public int ranking(String str) {
 		char value = str.charAt(0);
 		char suit = str.charAt(1);
-		
+
 		for (int i = 0; i < values.length(); i++) {
 			if (values.charAt(i) == value) {
 				for (int j = 0; j < suits.length(); j++) {
@@ -64,9 +63,9 @@ class Card implements Comparable<Card> {
 		assert false : "no hashcode implementation";
 		return 17;
 	}
-	
+
 	@Override
-	public String toString(){
-		return value+suit+" ";
+	public String toString() {
+		return value + suit + " ";
 	}
 }
