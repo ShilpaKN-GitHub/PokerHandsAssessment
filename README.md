@@ -10,7 +10,7 @@ Assessment exercise provided by Symbio.
 1. Download or clone this project to your local system directory.
 2. Open terminal or command prompt.
 3. Change directory to PokerHands/src directory.
-   > Example command: ```cd /Users/<user_name>/Desktop/Assessment/PokerHands/src```
+   > Example command: ```cd /Users/<user_name>/Desktop/Solution/PokerHandsAssessment/Symbio_Assessment/PokerHands/src```
 4. Compile the program using below command.
    > Command: ```javac PokerHands.java```
 5. Execute the program using below command.
